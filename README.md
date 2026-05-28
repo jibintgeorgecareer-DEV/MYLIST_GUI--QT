@@ -32,25 +32,25 @@ The application helps users manage tasks efficiently with reminders, notificatio
 
 ## Login Page
 
-![Login](screenshots/Login.png)
+![Login](sceenshots/Login.png)
 
 ---
 
 ## Dashboard
 
-![Dashboard](screenshots/Dashboard.png)
+![Dashboard](sreenshots/Dashboard.png)
 
 ---
 
 ## User Profile
 
-![Profile](screenshots/profile.png)
+![Profile](sreenshots/profile.png)
 
 ---
 
 ## Task Details
 
-![Task Details](screenshots/task_details.png)
+![Task Details](sreenshots/task_details.png)
 
 ---
 
