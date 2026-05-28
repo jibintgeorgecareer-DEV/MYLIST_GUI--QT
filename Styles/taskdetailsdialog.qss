@@ -1,0 +1,210 @@
+/* ═══════════════════════════════════════
+   TASK DETAILS DIALOG — dialog.qss
+═══════════════════════════════════════ */
+
+QDialog#TaskDetailsDialog {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+/* ── RED HEADER ── */
+QFrame#dia_header {
+    background-color: #C0392B;
+    border-radius: 0px;
+}
+QLabel#label {
+    font-size: 16px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+QLabel#dia_header_sub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.3px;
+}
+
+/* ── BODY ── */
+QFrame#dia_body {
+    background-color: #FFFFFF;
+}
+
+/* ── FIELD LABELS (uppercase small caps) ── */
+QLabel#dia_label_task,
+QLabel#dia_label_desc,
+QLabel#dia_label_start,
+QLabel#dia_label_end,
+QLabel#dia_label_priority,
+QLabel#dia_label_status {
+    font-size: 10px;
+    font-weight: 700;
+    color: #999999;
+    letter-spacing: 1.8px;
+}
+
+/* ── LINE EDITS (shared base) ── */
+QLineEdit#dia_task,
+QLineEdit#dia_description,
+QLineEdit#dia_priority {
+    background-color: #FAFAFA;
+    border: 1.5px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 13px;
+    color: #2C3E50;
+    min-height: 24px;
+    selection-background-color: #F5B7B1;
+    selection-color: #2C3E50;
+}
+QLineEdit#dia_task:hover,
+QLineEdit#dia_description:hover,
+QLineEdit#dia_priority:hover {
+    border: 1.5px solid #E74C3C;
+    background-color: #FFFFFF;
+}
+QLineEdit#dia_task:focus,
+QLineEdit#dia_description:focus,
+QLineEdit#dia_priority:focus {
+    border: 2px solid #C0392B;
+    background-color: #FFFFFF;
+}
+
+/* ── TASK NAME — slightly bolder ── */
+QLineEdit#dia_task {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ── PRIORITY — accent styling ── */
+QLineEdit#dia_priority {
+    font-size: 12px;
+    font-weight: 700;
+    color: #C0392B;
+    background-color: #FDF0EF;
+    border: 1px solid #F5B7B1;
+}
+QLineEdit#dia_priority:hover {
+    background-color: #FBE8E7;
+    border: 1.5px solid #E74C3C;
+}
+QLineEdit#dia_priority:focus {
+    background-color: #FFFFFF;
+    border: 2px solid #C0392B;
+    color: #2C3E50;
+}
+
+/* ── DATE BOXES ── */
+QFrame#dia_startframe,
+QFrame#dia_endframe {
+    background-color: #FAFAFA;
+    border: 1.5px solid #F0F0F0;
+    border-radius: 10px;
+}
+QLineEdit#dia_startdate,
+QLineEdit#dia_enddate {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid #E8E8E8;
+    border-radius: 0px;
+    padding: 4px 2px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2C3E50;
+    min-height: 20px;
+}
+QLineEdit#dia_startdate:hover,
+QLineEdit#dia_enddate:hover {
+    border-bottom: 1.5px solid #E74C3C;
+}
+QLineEdit#dia_startdate:focus,
+QLineEdit#dia_enddate:focus {
+    border-bottom: 2px solid #C0392B;
+    background-color: transparent;
+}
+
+/* ── DIVIDER ── */
+QFrame#dia_divider {
+    color: #F0F0F0;
+    background-color: #F0F0F0;
+}
+
+/* ── STATUS COMBOBOX ── */
+QComboBox#dia_status {
+    background-color: #FAFAFA;
+    border: 1.5px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 13px;
+    color: #2C3E50;
+    min-height: 24px;
+}
+QComboBox#dia_status:hover {
+    border: 1.5px solid #E74C3C;
+    background-color: #FFFFFF;
+}
+QComboBox#dia_status:focus {
+    border: 2px solid #C0392B;
+    background-color: #FFFFFF;
+}
+QComboBox#dia_status::drop-down {
+    border: none;
+    width: 24px;
+}
+QComboBox#dia_status::down-arrow {
+    image: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #C0392B;
+    width: 0;
+    height: 0;
+    margin-right: 8px;
+}
+QComboBox#dia_status QAbstractItemView {
+    background-color: #FFFFFF;
+    border: 1.5px solid #E8E8E8;
+    border-radius: 8px;
+    selection-background-color: #FDF0EF;
+    selection-color: #C0392B;
+    font-size: 13px;
+    padding: 4px;
+}
+
+/* ── SAVE BUTTON ── */
+QPushButton#dia_save {
+    background-color: #C0392B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    min-height: 44px;
+}
+QPushButton#dia_save:hover {
+    background-color: #E74C3C;
+}
+QPushButton#dia_save:pressed {
+    background-color: #96281B;
+}
+
+/* ── DELETE BUTTON ── */
+QPushButton#dia_deletetask {
+    background-color: transparent;
+    color: #C0392B;
+    border: 1.5px solid #C0392B;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    min-height: 44px;
+}
+QPushButton#dia_deletetask:hover {
+    background-color: #FDF0EF;
+    border: 1.5px solid #E74C3C;
+    color: #E74C3C;
+}
+QPushButton#dia_deletetask:pressed {
+    background-color: #F5B7B1;
+    border: 1.5px solid #96281B;
+    color: #96281B;
+}

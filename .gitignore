@@ -1,0 +1,28 @@
+# Build folders
+build/
+
+# Qt Creator
+.qtcreator/
+
+# Qt generated files
+ui_*.h
+moc_*.cpp
+qrc_*.cpp
+
+# User settings
+*.pro.user
+CMakeLists.txt.user
+
+# Executables
+*.exe
+
+# DLLs
+*.dll
+
+# Object files
+*.o
+*.obj
+*.a
+
+# Autosave
+*.autosave

@@ -1,0 +1,585 @@
+/* ═══════════════════════════════════════════════
+   MYLIST — LOGIN PAGE  |  Full Rewrite
+═══════════════════════════════════════════════ */
+
+/* PAGE BACKGROUND */
+QWidget#LoginPage {
+    background-color: #F5F5F5;
+}
+
+/* CARD FRAME */
+QFrame#frame_card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    border: 1px solid #EDEDED;
+}
+
+/* ── HEADING ── */
+QLabel#label_6 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #C0392B;
+    letter-spacing: 3px;
+    qproperty-alignment: AlignCenter;
+    padding-bottom: 2px;
+}
+
+/* ── GREETING SUBTITLE (add a QLabel named label_greeting) ── */
+QLabel#label_greeting {
+    font-size: 12px;
+    color: #AAAAAA;
+    qproperty-alignment: AlignCenter;
+    letter-spacing: 0.3px;
+    padding-bottom: 6px;
+}
+
+/* ── FIELD LABELS ── */
+QLabel#label_4,
+QLabel#label_5 {
+    font-size: 10px;
+    font-weight: 700;
+    color: #999999;
+    letter-spacing: 1.8px;
+    qproperty-alignment: AlignLeft;
+    padding-left: 2px;
+    padding-bottom: 0px;
+}
+
+/* ── INPUT FIELDS ── */
+QLineEdit#login_name,
+QLineEdit#login_password {
+    background-color: #FAFAFA;
+    border: 1.5px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #2C3E50;
+    min-height: 24px;
+    selection-background-color: #E74C3C;
+    selection-color: #FFFFFF;
+}
+
+QLineEdit#login_name:hover,
+QLineEdit#login_password:hover {
+    border: 1.5px solid #E74C3C;
+    background-color: #FFFFFF;
+}
+
+QLineEdit#login_name:focus,
+QLineEdit#login_password:focus {
+    border: 2px solid #C0392B;
+    background-color: #FFFFFF;
+}
+
+/* ── LOGIN BUTTON — Primary ── */
+QPushButton#btn_login {
+    background-color: #C0392B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    min-height: 44px;
+    margin-top: 4px;
+}
+
+QPushButton#btn_login:hover {
+    background-color: #E74C3C;
+}
+
+QPushButton#btn_login:pressed {
+    background-color: #96281B;
+}
+
+/* ── REGISTER BUTTON — Ghost ── */
+QPushButton#btn_goto_register {
+    background-color: transparent;
+    color: #C0392B;
+    border: 1.5px solid #C0392B;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    min-height: 40px;
+}
+
+QPushButton#btn_goto_register:hover {
+    background-color: #FDF0EF;
+    color: #E74C3C;
+    border-color: #E74C3C;
+}
+
+QPushButton#btn_goto_register:pressed {
+    background-color: #F5B7B1;
+    color: #922B21;
+    border-color: #922B21;
+}
+
+/* ── FOOTER NOTE (optional QLabel named label_footer) ── */
+QLabel#label_footer {
+    font-size: 10px;
+    color: #CCCCCC;
+    qproperty-alignment: AlignCenter;
+    letter-spacing: 0.5px;
+    padding-top: 4px;
+}
+
+/* Register Page */
+
+QWidget#RegisterPage {
+background-color: #F5F5F5;
+}
+
+QFrame#reg_frame_card {
+background-color: #FFFFFF;
+border-radius: 16px;
+border: 1px solid #EDEDED;
+}
+
+QLabel#label_7 {
+font-size: 26px;
+font-weight: 800;
+color: #C0392B;
+letter-spacing: 3px;
+qproperty-alignment: AlignCenter;
+}
+
+QLabel#reg_label_greeting {
+font-size: 12px;
+color: #AAAAAA;
+qproperty-alignment: AlignCenter;
+}
+
+QLabel#label,
+QLabel#label_2,
+QLabel#label_11 {
+font-size: 10px;
+font-weight: 700;
+color: #999999;
+letter-spacing: 1.8px;
+padding-left: 2px;
+}
+
+QLineEdit#register_name,
+QLineEdit#register_email,
+QLineEdit#register_password {
+background-color: #FAFAFA;
+border: 1.5px solid #E8E8E8;
+border-radius: 10px;
+padding: 10px 14px;
+font-size: 14px;
+color: #2C3E50;
+min-height: 24px;
+}
+
+QLineEdit#register_name:hover,
+QLineEdit#register_email:hover,
+QLineEdit#register_password:hover {
+border: 1.5px solid #E74C3C;
+background-color: #FFFFFF;
+}
+
+QLineEdit#register_name:focus,
+QLineEdit#register_email:focus,
+QLineEdit#register_password:focus {
+border: 2px solid #C0392B;
+background-color: #FFFFFF;
+}
+
+QPushButton#btn_register_button {
+background-color: #C0392B;
+color: #FFFFFF;
+border: none;
+border-radius: 10px;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 1.5px;
+min-height: 44px;
+}
+
+QPushButton#btn_register_button:hover {
+background-color: #E74C3C;
+}
+
+QPushButton#btn_register_button:pressed {
+background-color: #96281B;
+}
+
+QPushButton#btn_goto_login {
+background-color: transparent;
+color: #C0392B;
+border: 1.5px solid #C0392B;
+border-radius: 10px;
+font-size: 13px;
+font-weight: 600;
+min-height: 40px;
+}
+
+QPushButton#btn_goto_login:hover {
+background-color: #FDF0EF;
+color: #E74C3C;
+border-color: #E74C3C;
+}
+
+QPushButton#btn_goto_login:pressed {
+background-color: #F5B7B1;
+}
+
+QLabel#reg_label_footer {
+font-size: 10px;
+color: #CCCCCC;
+qproperty-alignment: AlignCenter;
+padding-top: 4px;
+}
+
+/* Dash Boarde ulla qss styles */
+
+/* ═══════════════════════════════════════════════
+MYLIST — DASHBOARD PAGE
+═══════════════════════════════════════════════ */
+
+/* PAGE BACKGROUND */
+QWidget#DashboardPage {
+ background-color: #F5F5F5;
+}
+
+/* ── TOP BAR GREETING ── */
+QLabel#label_3 {
+ font-size: 11px;
+ color: #AAAAAA;
+}
+
+QLabel#dash_username {
+ font-size: 14px;
+ font-weight: 700;
+ color: #C0392B;
+ letter-spacing: 0.5px;
+}
+
+QPushButton#btn_profile {
+ background-color: transparent;
+ color: #C0392B;
+ border: 1.5px solid #C0392B;
+ border-radius: 8px;
+ font-size: 11px;
+ font-weight: 600;
+ padding: 4px 12px;
+}
+
+QPushButton#btn_profile:hover {
+ background-color: #FDF0EF;
+ border-color: #E74C3C;
+ color: #E74C3C;
+}
+
+QPushButton#btn_profile:pressed {
+ background-color: #F5B7B1;
+ color: #922B21;
+}
+
+/* ── STAT LABELS (Total Tasks / Completed / Pending) ── */
+QLabel#label_13,
+QLabel#label_14,
+QLabel#label_15 {
+ font-size: 10px;
+ font-weight: 700;
+ color: #AAAAAA;
+ letter-spacing: 1.5px;
+ qproperty-alignment: AlignCenter;
+}
+
+QLabel#total_tasks {
+ font-size: 20px;
+ font-weight: 800;
+ color: #C0392B;
+ qproperty-alignment: AlignCenter;
+}
+
+QLabel#com_tasks {
+ font-size: 20px;
+ font-weight: 800;
+ color: #27AE60;
+ qproperty-alignment: AlignCenter;
+}
+
+QLabel#pen_tasks {
+ font-size: 20px;
+ font-weight: 800;
+ color: #E74C3C;
+ qproperty-alignment: AlignCenter;
+}
+
+/* ── ADD TASK FORM — FIELD LABELS ── */
+QLabel#label_8,
+QLabel#label_9,
+QLabel#label_10,
+QLabel#label_12 {
+ font-size: 10px;
+ font-weight: 700;
+ color: #999999;
+ letter-spacing: 1.8px;
+}
+
+/* ── INPUT FIELDS ── */
+QLineEdit#dash_task,
+QLineEdit#task_description {
+ background-color: #FAFAFA;
+ border: 1.5px solid #E8E8E8;
+ border-radius: 10px;
+ padding: 8px 12px;
+ font-size: 13px;
+ color: #2C3E50;
+ min-height: 22px;
+ selection-background-color: #E74C3C;
+ selection-color: #FFFFFF;
+}
+
+QLineEdit#dash_task:hover,
+QLineEdit#task_description:hover {
+ border: 1.5px solid #E74C3C;
+ background-color: #FFFFFF;
+}
+
+QLineEdit#dash_task:focus,
+QLineEdit#task_description:focus {
+ border: 2px solid #C0392B;
+ background-color: #FFFFFF;
+}
+
+/* ── DATE EDIT ── */
+QDateEdit#task_end {
+ background-color: #FAFAFA;
+ border: 1.5px solid #E8E8E8;
+ border-radius: 10px;
+ padding: 6px 10px;
+ font-size: 13px;
+ color: #2C3E50;
+ min-height: 22px;
+}
+
+QDateEdit#task_end:hover {
+ border: 1.5px solid #E74C3C;
+}
+
+QDateEdit#task_end:focus {
+ border: 2px solid #C0392B;
+}
+
+QDateEdit#task_end::drop-down {
+ subcontrol-origin: padding;
+ subcontrol-position: top right;
+ width: 22px;
+ border-left: 1px solid #E8E8E8;
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+
+QDateEdit#task_end::down-arrow {
+ image: none;
+ width: 8px;
+ height: 8px;
+ border-left: 2px solid #C0392B;
+ border-bottom: 2px solid #C0392B;
+ margin-right: 4px;
+ top: -2px;
+}
+
+/* ── COMBO BOXES (Priority & Search Priority) ── */
+QComboBox#task_priority,
+QComboBox#search_priority {
+ background-color: #FAFAFA;
+ border: 1.5px solid #E8E8E8;
+ border-radius: 10px;
+ padding: 6px 10px;
+ font-size: 13px;
+ color: #2C3E50;
+ min-height: 22px;
+}
+
+QComboBox#task_priority:hover,
+QComboBox#search_priority:hover {
+ border: 1.5px solid #E74C3C;
+ background-color: #FFFFFF;
+}
+
+QComboBox#task_priority:focus,
+QComboBox#search_priority:focus {
+ border: 2px solid #C0392B;
+}
+
+QComboBox#task_priority::drop-down,
+QComboBox#search_priority::drop-down {
+ subcontrol-origin: padding;
+ subcontrol-position: top right;
+ width: 22px;
+ border-left: 1px solid #E8E8E8;
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+
+QComboBox#task_priority QAbstractItemView,
+QComboBox#search_priority QAbstractItemView {
+ background-color: #FFFFFF;
+ border: 1.5px solid #E8E8E8;
+ border-radius: 8px;
+ selection-background-color: #FAECE7;
+ selection-color: #C0392B;
+ padding: 4px;
+ font-size: 13px;
+ color: #2C3E50;
+}
+
+/* ── ADD TASK BUTTON — Primary ── */
+QPushButton#btn_addtask {
+ background-color: #C0392B;
+ color: #FFFFFF;
+ border: none;
+ border-radius: 10px;
+ font-size: 12px;
+ font-weight: 700;
+ letter-spacing: 1px;
+ min-height: 34px;
+ padding: 0 14px;
+}
+
+QPushButton#btn_addtask:hover {
+ background-color: #E74C3C;
+}
+
+QPushButton#btn_addtask:pressed {
+ background-color: #96281B;
+}
+
+/* ── SEARCH FIELD ── */
+QLineEdit#dash_searchtask {
+ background-color: #FFFFFF;
+ border: 1.5px solid #E8E8E8;
+ border-radius: 10px;
+ padding: 7px 12px;
+ font-size: 13px;
+ color: #2C3E50;
+ selection-background-color: #E74C3C;
+ selection-color: #FFFFFF;
+}
+
+QLineEdit#dash_searchtask:hover {
+ border: 1.5px solid #E74C3C;
+}
+
+QLineEdit#dash_searchtask:focus {
+ border: 2px solid #C0392B;
+}
+
+/* ── SEARCH / FILTER BUTTONS — Ghost ── */
+QPushButton#btn_searchtask,
+QPushButton#btn_searchpriority,
+QPushButton#btn_comtask,
+QPushButton#btn_pentasks,
+QPushButton#btn_alltasks {
+ background-color: transparent;
+ color: #C0392B;
+ border: 1.5px solid #C0392B;
+ border-radius: 9px;
+ font-size: 12px;
+ font-weight: 600;
+ padding: 4px 12px;
+ min-height: 30px;
+}
+
+QPushButton#btn_searchtask:hover,
+QPushButton#btn_searchpriority:hover,
+QPushButton#btn_comtask:hover,
+QPushButton#btn_pentasks:hover,
+QPushButton#btn_alltasks:hover {
+ background-color: #FDF0EF;
+ border-color: #E74C3C;
+ color: #E74C3C;
+}
+
+QPushButton#btn_searchtask:pressed,
+QPushButton#btn_searchpriority:pressed,
+QPushButton#btn_comtask:pressed,
+QPushButton#btn_pentasks:pressed,
+QPushButton#btn_alltasks:pressed {
+ background-color: #F5B7B1;
+ color: #922B21;
+ border-color: #922B21;
+}
+
+/* ── DELETE TASK BUTTON — Danger ── */
+QPushButton#btn_deletetask_2 {
+ background-color: transparent;
+ color: #C0392B;
+ border: 1.5px solid #E74C3C;
+ border-radius: 9px;
+ font-size: 12px;
+ font-weight: 600;
+ padding: 4px 12px;
+ min-height: 30px;
+}
+
+QPushButton#btn_deletetask_2:hover {
+ background-color: #FAECE7;
+ border-color: #C0392B;
+}
+
+QPushButton#btn_deletetask_2:pressed {
+ background-color: #F5B7B1;
+ color: #922B21;
+}
+
+/* ── TASK LIST WIDGET ── */
+QListWidget#task_list {
+ background-color: #FFFFFF;
+ border: 0.5px solid #EDEDED;
+ border-radius: 12px;
+ padding: 4px;
+ font-size: 13px;
+ color: #2C3E50;
+ outline: none;
+}
+
+QListWidget#task_list::item {
+ padding: 10px 12px;
+ border-bottom: 0.5px solid #F5F5F5;
+ border-radius: 6px;
+ color: #2C3E50;
+}
+
+QListWidget#task_list::item:hover {
+ background-color: #FEF9F9;
+ color: #2C3E50;
+}
+
+QListWidget#task_list::item:selected {
+ background-color: #FAECE7;
+ color: #C0392B;
+ border-left: 3px solid #C0392B;
+}
+
+QListWidget#task_list::item:selected:hover {
+ background-color: #F5B7B1;
+}
+
+QScrollBar:vertical {
+ background: #F5F5F5;
+ width: 6px;
+ border-radius: 3px;
+ margin: 4px 0;
+}
+
+QScrollBar::handle:vertical {
+ background: #E0E0E0;
+ border-radius: 3px;
+ min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+ background: #C0392B;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+ height: 0px;
+}
