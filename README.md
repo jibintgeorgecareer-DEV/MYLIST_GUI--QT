@@ -70,7 +70,14 @@ MYLIST_APP/
 ├── README.md
 ├── .gitignore
 ```
-
+# Main Pillers 
+* main.cpp              : Entry point of the application.
+* mainwindow.cpp        : Contains main app logic and UI event handling.
+* taskmanager           : Handles the all task-related operations (CRUD operations)
+* authmanager           : Handles user authentication features (Registration , Login , current user)
+* databasemanager       : Handles DB connection and set-up (SQLite)
+* taskdetailsdialog.cpp : Manages task details dialog window (Detailed info)
+* userprofile.cpp       : User info and exporting task into txt.
 
 
 # Future Improvements
