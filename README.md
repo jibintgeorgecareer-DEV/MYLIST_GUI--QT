@@ -32,7 +32,7 @@ The application helps users manage tasks efficiently with reminders, notificatio
 
 ## Login Page
 
-![Login](sceenshots/Login.png)
+![Login](sreenshots/Login.png)
 
 ---
 
@@ -70,7 +70,7 @@ MYLIST_APP/
 ├── README.md
 ├── .gitignore
 ```
-# Main Pillers 
+# Main Modules 
 * main.cpp              : Entry point of the application.
 * mainwindow.cpp        : Contains main app logic and UI event handling.
 * taskmanager           : Handles the all task-related operations (CRUD operations)
